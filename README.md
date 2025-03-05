@@ -2,9 +2,13 @@
 Based on the paper:
 
 Soft Actor-Critic Algorithms and Applications
+
 https://arxiv.org/abs/1812.05905
+
 Also relevant:
+
 Continuous control with deep reinforcement learning
+
 https://arxiv.org/abs/1509.02971
 
 List of tricks used:
