@@ -72,7 +72,7 @@ class PolicyNetwork(nn.Module):
         state = torch.FloatTensor(state).unsqueeze(0).to(next(self.parameters()).device)
         mean, log_std = self.forward(state)
         if deterministic:
-            action = torch.tanh(mean)
+            action = torch.sigmoid(mean)
         else:
             action, _, _ = self.sample(state)
         return action.detach().cpu().numpy()[0]
